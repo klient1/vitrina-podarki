@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Подарки и свечи</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fffdf8; color: #333; }
-    header { background: #a0522d; color: white; padding: 30px 20px; text-align: center; }
-    header h1 { margin: 0 0 10px; font-size: 28px; }
-    header p { margin: 0; font-size: 17px; }
+    body { font-family: 'Segoe UI', sans-serif; margin:0; background:#fdf7f2; color:#3a2f2b; }
+    header { background:#d6a77a; color:white; padding:30px 20px; text-align:center; }
+    header h1 { margin:0 0 10px; font-size:28px; }
+    header p { margin:0; font-size:17px; }
 
-    .container { max-width: 700px; margin: 0 auto; padding: 20px; }
-    .product { display: flex; margin: 15px 0; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
-    .product img { width: 100px; height: 100px; object-fit: cover; }
-    .product-info { padding: 10px; flex-grow: 1; }
-    .product-info h3 { margin: 0 0 5px; font-size: 18px; }
-    .product-info p { margin: 0; font-size: 15px; color: #555; }
+    .container { max-width:700px; margin:20px auto; padding:0 20px; }
+    .product { display:flex; background:#fff; border-radius:8px; margin-bottom:15px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.1); }
+    .product img { width:100px; height:100px; object-fit:cover; }
+    .product-info { padding:10px; flex:1; }
+    .product-info h3 { margin:0 0 5px; font-size:18px; }
+    .product-info p { margin:0; font-size:14px; color:#444; }
 
-    .cta { text-align: center; margin: 40px 0; }
-    .cta a { background: #25D366; color: white; text-decoration: none; padding: 14px 24px; border-radius: 8px; font-size: 18px; }
+    .why { background:#f8ece2; padding:20px; border-radius:10px; margin-top:30px; }
+    .why h2 { font-size:20px; margin-bottom:10px; }
+    .why ul { list-style:none; padding-left:0; }
+    .why li { margin-bottom:8px; }
 
-    footer { text-align: center; padding: 20px; font-size: 14px; color: #aaa; }
+    .cta { text-align:center; margin:30px 0; }
+    .cta a { background:#25D366; color:white; text-decoration:none; padding:14px 24px; border-radius:8px; font-size:18px; }
+
+    footer { text-align:center; font-size:14px; color:#999; padding:20px 0; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Подарки и свечи</h1>
-    <p>Ароматы, уют и внимание к деталям 🎁🕯️</p>
+    <p>Уют в каждой детали 🎁🕯️</p>
   </header>
 
   <div class="container">
     <div class="product">
-      <img src="https://images.openai.com/thumbnails/url/skfxsXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw4sq8ivMA20LC8Lyk-pjMhJTCt0yy40K43yNS2KqPAvDQkx9jX2tCz1rkyO9wh2NXEvNggINzItcI9UKwYA9Mcpng" alt="Свеча Ваниль">
+      <img src="https://images.unsplash.com/photo-1607082349567-9895cbf43070?auto=format&fit=crop&w=800&q=80" alt="Подарочный бокс" />
       <div class="product-info">
-        <h3>Свеча с ароматом ванили</h3>
-        <p>1 500 ₸</p>
+        <h3>Подарочный бокс «Тепло»</h3>
+        <p>Чай, свеча, открытка и забота внутри. 4 900 ₸</p>
       </div>
     </div>
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1607082349566-187342f10b6b?auto=format&fit=crop&w=800&q=80" alt="Набор Уют">
+      <img src="https://images.unsplash.com/photo-1587049352844-d9e1c4795635?auto=format&fit=crop&w=800&q=80" alt="Свеча с ароматом ванили" />
       <div class="product-info">
-        <h3>Подарочный набор «Уют»</h3>
-        <p>3 500 ₸</p>
+        <h3>Свеча «Ваниль и корица»</h3>
+        <p>Тёплый аромат и атмосфера уюта. 2 200 ₸</p>
       </div>
     </div>
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1585386959984-a415522f4d3e?auto=format&fit=crop&w=800&q=80" alt="Набор Тепло и забота">
+      <img src="https://images.unsplash.com/photo-1601326611284-07f29734df91?auto=format&fit=crop&w=800&q=80" alt="Аромасаше лаванда" />
       <div class="product-info">
-        <h3>Набор «Тепло и забота»</h3>
-        <p>4 000 ₸</p>
+        <h3>Аромасаше «Лаванда»</h3>
+        <p>Для шкафов, подушек, сумок. 800 ₸</p>
       </div>
     </div>
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1604400597361-5b64e3c5b2e0?auto=format&fit=crop&w=800&q=80" alt="Свеча Корица и цитрус">
+      <img src="https://images.unsplash.com/photo-1613545344034-92caa79b66cb?auto=format&fit=crop&w=800&q=80" alt="Свеча ручной работы" />
       <div class="product-info">
-        <h3>Свеча в баночке «Корица и цитрус»</h3>
-        <p>1 800 ₸</p>
+        <h3>Свеча с цветами</h3>
+        <p>Украшена сухоцветами, ручная работа. 2 700 ₸</p>
       </div>
     </div>
 
+    <section class="why">
+      <h2>Почему нас выбирают:</h2>
+      <ul>
+        <li>🎀 Уникальные наборы, собранные вручную</li>
+        <li>🕯️ Натуральный воск и ароматы</li>
+        <li>📦 Эстетичная упаковка для подарков</li>
+        <li>❤️ Всё сделано с душой</li>
+      </ul>
+    </section>
+
     <div class="cta">
-      <a href="https://wa.me/77718348634" target="_blank">Заказать в WhatsApp</a>
+      <a href="https://wa.me/77718748634" target="_blank">Заказать в WhatsApp</a>
     </div>
   </div>
 
-  <footer>
-    © 2025 Подарки и свечи — тепло, красота и внимание к деталям.
-  </footer>
+  <footer>© 2025 Подарки и свечи — маленькие радости, большие чувства.</footer>
 
 </body>
+</html>
+
+
+
